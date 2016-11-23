@@ -1,7 +1,7 @@
 "use strict";
 
-importScripts("/content/scripts/lib/async.js");
-importScripts("/content/scripts/siteFiles.js");
+importScripts("./content/scripts/lib/async.js");
+importScripts("./content/scripts/siteFiles.js");
 
 importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-messaging.js');
@@ -73,8 +73,8 @@ self.addEventListener("push", function(event) {
   var title = 'Quick! Spots are filling up';
   const options = {
     body: 'You should cook for Bron soon',
-    icon: '/content/images/icon.png',
-    badge: '/content/images/badge.png',
+    icon: './content/images/icon.png',
+    badge: './content/images/badge.png',
     actions: [  
       {action: 'book', title: 'Book Now'},  
       {action: 'view', title: 'View Slots'}]  
@@ -90,8 +90,8 @@ messaging.setBackgroundMessageHandler(function(payload) {
   const notificationTitle = 'Quick! Spots are filling up (FireBase)';
   const notificationOptions = {
     body: 'You should cook for Bron soon',
-    icon: '/content/images/icon.png',
-    badge: '/content/images/badge.png'
+    icon: './content/images/icon.png',
+    badge: './content/images/badge.png'
   };
 
   return self.registration.showNotification(notificationTitle, notificationOptions);

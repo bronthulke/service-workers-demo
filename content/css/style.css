@@ -1,0 +1,33 @@
+ul
+{
+    list-style-type: none;
+}
+
+
+
+#update-toast {
+  display: none;
+  padding: .5cm .5cm .5cm .5cm;
+  background: mediumpurple;
+  border: 1px solid blue;
+  position: fixed;
+  bottom: 0px;
+  width: 50%;
+  left: 20%;
+  margin: 0 auto;
+  animation: fadein 2s;
+}
+
+#update-toast.show{
+  display: inline-block;
+}
+
+#update-toast button {
+  border: none;
+  background: inherit;
+  color: pink;
+  font-size: inherit;
+  padding-right: .2cm;
+  padding-left: .2cm;
+  text-decoration: underline;
+}

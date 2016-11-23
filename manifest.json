@@ -1,0 +1,6 @@
+{  
+  "name": "Brons Cookoff - Service Workers Demo",
+  "short_name": "Brons Cookoff",
+  "start_url": "/",
+  "gcm_sender_id": "429768347080"
+}
